@@ -1,64 +1,49 @@
 let valueExibition = [];
 let timer = 0;
 
-function runTaskA() {
-  valueExibition.push("A ")
+function addTaskA() {
+  valueExibition.push("A")
 }
-function runTaskB() {
+
+function addTaskB() {
   valueExibition.push("B")
 }
-function runTaskC() {
+
+function addTaskC() {
   valueExibition.push("C")
 }
-function runTaskD() {
+
+function addTaskD() {
   valueExibition.push("D")
 }
-function runTaskE() {
+
+function addTaskE() {
   valueExibition.push("E")
 }
 
+function clearTasks() {
+  valueExibition = [];
+}
+
 setInterval(() => {
-  
-  console.log(`${timer} ${valueExibition[0]} ${valueExibition[1]} - Size of array: ${valueExibition.length}`)
   timer++;
+  clearTasks();
 
-
-
-  if (timer === 1) {
-    runTaskA()
-  }
-  if (timer === 2) {
-    runTaskA()
-    runTaskB()
-  }
-  if (timer === 3) {
-    runTaskA()
-    runTaskC()
-  }
-  if (timer === 4) {
-    runTaskA()
-    runTaskD()
-  }
-  if (timer === 5) {
-    runTaskA()
-    runTaskD()
+  if (timer % 1 === 0) {
+    addTaskA();
   }
   if (timer % 5 === 2) {
-    runTaskA()
-    runTaskB('B');
+    addTaskB();
   }
   if (timer % 5 === 3) {
-    runTaskA()
-    runTaskC();
+    addTaskC();
   }
   if (timer % 10 === 4) {
-    runTaskA()
-    runTaskD();
+    addTaskD();
   }
   if (timer % 10 === 5) {
-    runTaskA()
-    runTaskE();
+    addTaskE();
   }
 
-
+  console.log(`${timer} -> ${valueExibition.join(" ")}`);
 }, 1000);
