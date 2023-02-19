@@ -1,33 +1,64 @@
-let runningTasks = [];
-let time = 0;
+let valueExibition = [];
+let timer = 0;
+
+function runTaskA() {
+  valueExibition.push("A ")
+}
+function runTaskB() {
+  valueExibition.push("B")
+}
+function runTaskC() {
+  valueExibition.push("C")
+}
+function runTaskD() {
+  valueExibition.push("D")
+}
+function runTaskE() {
+  valueExibition.push("E")
+}
 
 setInterval(() => {
-  time++;
+  
+  console.log(`${timer} ${valueExibition[0]} ${valueExibition[1]} - Size of array: ${valueExibition.length}`)
+  timer++;
 
-  // Task A runs every second
-  if (time % 1 === 0) {
-    runTask('A');
+
+
+  if (timer === 1) {
+    runTaskA()
+  }
+  if (timer === 2) {
+    runTaskA()
+    runTaskB()
+  }
+  if (timer === 3) {
+    runTaskA()
+    runTaskC()
+  }
+  if (timer === 4) {
+    runTaskA()
+    runTaskD()
+  }
+  if (timer === 5) {
+    runTaskA()
+    runTaskD()
+  }
+  if (timer % 5 === 2) {
+    runTaskA()
+    runTaskB('B');
+  }
+  if (timer % 5 === 3) {
+    runTaskA()
+    runTaskC();
+  }
+  if (timer % 10 === 4) {
+    runTaskA()
+    runTaskD();
+  }
+  if (timer % 10 === 5) {
+    runTaskA()
+    runTaskE();
   }
 
-  // Task B runs every 5 seconds
-  if (time % 5 === 0) {
-    runTask('B');
-  }
 
-  // Task C runs every 5 seconds
-  if (time % 5 === 0) {
-    runTask('C');
-  }
-
-  // Task D runs every 10 seconds
-  if (time % 10 === 0) {
-    runTask('D');
-  }
-
-  // Task E runs every 10 seconds
-  if (time % 10 === 0) {
-    runTask('E');
-  }
-
-  console.log(`${time} -> ${runningTasks.join(' ')}`);
 }, 1000);
