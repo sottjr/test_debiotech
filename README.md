@@ -14,11 +14,7 @@ The timer can be started, paused and restarted using the buttons provided on the
 
 # Summary of features:
 
-• Addition of tasks "A", "B", "C", "D" and "E" at regular intervals of time;
-• Display of current time on screen;
-• Display of running tasks on the screen;
-• Registration of time and tasks running on buttons that are dynamically created on the page at each time interval;
-• Start, pause, and restart timing and task sequence.
+• Addition of tasks "A", "B", "C", "D" and "E" at regular intervals of time; Display of current time on screen; Display of running tasks on the screen; Registration of time and tasks running on buttons that are dynamically created on the page at each time interval; Start, pause, and restart timing and task sequence.
 
 # Functions
 
