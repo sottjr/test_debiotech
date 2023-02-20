@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  body {
+    min-height: 550px;
+    max-width: 800px;
+    background-color: rgb(185, 180, 255); 
+    margin: 0 auto;
+  }
+  
+  .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  
+  .title {
+  margin: 0;
+  }
+  
+  .timer-tasks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  
+  }
+  
+  .timer, .tasks {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 5px;
+  width: 150px ;
+  height: 70px;
+  }
+  
+  .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .content {
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  
+  .info-button:hover {
+  background-color: #005fa3;
+  }
+  
+  .buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  }
+  
+  .start-btn, .stop-btn, .reset-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00cc44;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  cursor: pointer;
+  }
+  
+  .stop-btn {
+  background-color: #cc0000;
+  }
+  
+  .reset-btn {
+  background-color: #ffcc00;
+  }
+  
+
+#displayContent {
+  text-align: center;
+  margin: 20px auto;
+}
+.btnTasks {
+  text-align: center;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:10px;
+	border:1px solid #dcdcdc;
+	display: inline-block;
+	color:#7a787a;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	padding: 15px; 
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  justify-content: center;
+  margin: 2% 2% 2% 2% ;
+  width: 80px;
+  height: 60px;
+  
+}
+.btnTasks:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.btnTasks:active {
+	position:relative;
+	top:1px;
+}
